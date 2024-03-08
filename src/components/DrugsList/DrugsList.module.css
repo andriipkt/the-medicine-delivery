@@ -1,0 +1,53 @@
+.listWrapper {
+  border-radius: 12px;
+  max-width: 1024px;
+  margin-right: auto;
+}
+
+.listWrapper > button {
+  display: block;
+  margin: 30px auto 0 auto;
+
+  font-size: 24px;
+  border: none;
+  color: var(--accent-color);
+
+  transition: color 250ms ease-in-out;
+}
+
+.listWrapper > button:hover {
+  color: var(--main-color);
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 15px;
+
+  height: 700px;
+  overflow: auto;
+}
+
+.list::-webkit-scrollbar {
+  width: 10px;
+}
+.list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.list::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: rgba(5, 5, 5, 0.18);
+}
+
+.statusInfo {
+  padding: 20px;
+  display: block;
+  margin: auto auto;
+}
+
+.statusInfo > p {
+  font-size: 24px;
+  font-weight: 600;
+  color: red;
+}
